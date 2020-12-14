@@ -15,7 +15,7 @@ export class UserService {
     this.messageService.add(`UserService: ${message}`);
   }
 
-  // private usersUrl = 'api/users';
+  private usersUrl = 'http://localhost:8080/api/users';
 
   private handleError<T>(operation = 'operation', result?: T){
     return( error: any): Observable<T> => {
@@ -26,8 +26,13 @@ export class UserService {
     };
   }
 
+
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json'})
+  };
+
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(environment.userEndpoint).pipe(
+    return this.http.get<User[]>(this.usersUrl).pipe(
       tap(_ => this.log('fetched users')),
       catchError(this.handleError<User[]>(`getUsers`, []))
     );

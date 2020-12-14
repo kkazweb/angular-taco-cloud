@@ -3,7 +3,7 @@
 <ul class="users">
     <li *ngFor="let user of users">
         <a>
-            {{user.username}}
+            {{user.id}} {{user.username}} password: {{user.password}} role: {{user.role}}
         </a>
     </li>
 </ul>
