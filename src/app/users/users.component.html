@@ -1,9 +1,11 @@
 <h2> My Users: </h2>
 
 <ul class="users">
-    <li *ngFor="let user of users">
-        <a>
-            {{user.id}} {{user.username}} password: {{user.password}} role: {{user.role}}
+    <li *ngFor="let user of users" [class.selected]="user === selectedUser" (click)="onSelect(user)">
+        <a routerLink="/detail/{{user.id}}">
+            <span class="badge">{{user.id}}</span> {{user.username}}
         </a>
     </li>
 </ul>
+
+<app-user-search></app-user-search>
