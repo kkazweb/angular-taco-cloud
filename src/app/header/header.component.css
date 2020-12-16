@@ -1,38 +1,89 @@
-div.logo {
-    position: absolute;
-    top: 0px;
-    width: 100px;
-    height: 100px;
-}
-
-div.logo img {
-    width: 190px;
-    height: 140px;
-}
-
-div.topbar {
+.topbar {
     width: 100%;
-    height: 70px;
-}
-
-div.topbaritems {
-    height: 70px;
     float: right;
-    background-color: #dd4124;
+    background-color: red;
 }
 
-div.topbaritem:first-child {
-    border-left: 0px;
-}
-
-div.topbaritem {
+.logo {
     display: inline-block;
-    padding-top: 20px;
-    padding-left: 20px;
-    width: 200px;
-    height: 50px;
-    vertical-align: middle;
-    border-left: 1px solid aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+    vertical-align: top;
 }
+
+.logo img{
+    width: 90px;
+    height: 45px;
+    /* padding-right: 100px; */
+}
+
+.topbar a.brand{
+
+    margin: 0px auto;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;    
+    padding-left: 30px;
+}
+
+
+.topbar a.brand:hover {
+    background-color: #ddd;
+    color:black;
+}
+
+.navbar {
+    float: right;
+    width: 500px; 
+    margin: 0px auto;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;    
+    padding-left: 30px;
+    float: left;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color:black;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.Icon_metro-cart {
+    padding-top: 10px;
+    height: 30px;
+    width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float:right;
+        display:block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;};
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+

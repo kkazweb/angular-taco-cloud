@@ -1,24 +1,27 @@
-<div class="header">
-    <div class="logo"><a routerLink="/home"><img src="assets/tacohome.png"/></a></div>
-    <div class="topbar">
-        <div class="topbaritems">
-            <div class="topbaritem">
-                <a routerLink="/design" class="routerbutton">Design a Taco</a>
-            </div>
-            <div class="topbaritem">
-                <a routerLink="/login" class="routerbutton">Sign in</a>
-            </div>
-            <div class="topbaritem">
-                <a routerLink="/register" class="routerbutton">Register</a>
-            </div>
-            <div class="topbaritem">
-                <a routerLink="/cart" class="routerbutton">Cart</a>
-            </div>
-        </div>
+<div class="topbar">
+    <div class="logo">
+        <img src="assets/tacohome.png" href=""> <!-- (click)="select.click()" do dodania-->
     </div>
-    <div class="bottombar">
-        <div class="bottombar">
-            <p> TUTAJ BEDA KAFELKI Z RECENT TACO </p>
-        </div>
+    <div class="logo">
+    <a class="brand" href="#">Home</a>
     </div>
+    <nav class="navbar">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+      <div class="navbar-nav">
+        <a class="nav-item" href="#">Design</a>
+        <a class="nav-item" href="#">Sign in</a>
+        <a class="nav-item" href="#">Register   </a>
+        <a class="nav-item" href="#">$ 0.00</a>
+        <svg class="Icon_metro-cart" viewBox="2.571 3.856 30.849 28.921">
+			<path id="Icon_metro-cart" d="M 14.13890171051025 29.88451957702637 C 14.13890171051025 31.48174476623535 12.84410667419434 32.77656936645508 11.24685096740723 32.77656936645508 C 9.649595260620117 32.77656936645508 8.354801177978516 31.48174476623535 8.354801177978516 29.88451957702637 C 8.354801177978516 28.28729438781738 9.649625778198242 26.99246978759766 11.24685096740723 26.99246978759766 C 12.84407615661621 26.99246978759766 14.13890075683594 28.28729438781738 14.13890075683594 29.88451957702637 Z M 33.41923522949219 29.88451957702637 C 33.41923522949219 31.48174476623535 32.12443923950195 32.77656936645508 30.52718544006348 32.77656936645508 C 28.929931640625 32.77656936645508 27.63513565063477 31.48174476623535 27.63513565063477 29.88451957702637 C 27.63513565063477 28.28729438781738 28.92996025085449 26.99246978759766 30.52718544006348 26.99246978759766 C 32.12441253662109 26.99246978759766 33.41923522949219 28.28729438781738 33.41923522949219 29.88451957702637 Z M 33.41923522949219 17.35230255126953 L 33.41923522949219 5.784100532531738 L 10.28283309936523 5.784100532531738 C 10.28283309936523 4.719284057617188 9.41961669921875 3.856067180633545 8.354799270629883 3.856067180633545 L 2.570698738098145 3.856067180633545 L 2.570698738098145 5.784100532531738 L 6.426765441894531 5.784100532531738 L 7.875020027160645 18.19744300842285 C 6.992523193359375 18.90412712097168 6.426765441894531 19.98991203308105 6.426765441894531 21.2083683013916 C 6.426765441894531 23.3381233215332 8.153199195861816 25.0644359588623 10.28283214569092 25.0644359588623 L 33.41923522949219 25.0644359588623 L 33.41923522949219 23.13640213012695 L 10.28283309936523 23.13640213012695 C 9.218016624450684 23.13640213012695 8.354799270629883 22.27318572998047 8.354799270629883 21.2083683013916 C 8.354799270629883 21.20180130004883 8.355220794677734 21.19523429870605 8.355280876159668 21.18860626220703 L 33.41923522949219 17.3523006439209 Z">
+			</path>
+		</svg>
+        <!--        Icon and .ts function in angular for responsive navbar
+ -->
+    </div>
+  </nav>
 </div>
+
+  <!-- need to implement navbar sliding in .ts-->
